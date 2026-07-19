@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarna Priya R — Software Engineer</title>
+    
+    <!-- Meta tags for SEO -->
+    <meta name="description" content="Portfolio of Swarna Priya R — Software Engineer with 3 years of experience in Java, Spring Boot, Micronaut, event-driven architectures, and Azure cloud deployments.">
+    <meta name="keywords" content="Swarna Priya R, Software Engineer, Backend Engineer, Java Developer, Spring Boot, Micronaut, Apache Kafka, Microsoft Azure, Portfolio">
+    <meta name="author" content="Swarna Priya R">
+    
+    <!-- Open Graph for Social Sharing -->
+    <meta property="og:title" content="Swarna Priya R — Software Engineer">
+    <meta property="og:description" content="Backend Software Engineer with 3 years of experience in Java, Spring Boot, Micronaut, and Azure cloud deployments.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS imports -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/certs.css">
+    <link rel="stylesheet" href="css/contact.css">
+    
+    <!-- Lottie Web Player Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+            <div class="nav-logo">Swarna Priya R</div>
+            <div class="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#skills" class="nav-item">Skills</a></li>
+                    <li><a href="#experience" class="nav-item">Experience</a></li>
+                    <li><a href="#projects" class="nav-item">Projects</a></li>
+                    <li><a href="#certs" class="nav-item">Certifications</a></li>
+                    <li><a href="#education" class="nav-item">Education</a></li>
+                    <li><a href="#contact" class="nav-item">Contact</a></li>
+                </ul>
+                <div class="theme-toggle-wrapper">
+                    <button id="theme-toggle-btn" class="theme-toggle-btn" aria-label="Switch theme">
+                        <span class="theme-icon">🌙</span>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-content reveal">
+                <div class="hero-eyebrow">Software Engineer · Chennai, India</div>
+                <h1 class="hero-title">Hi, I'm <em>Swarna Priya R</em></h1>
+                <p class="hero-subtitle">Backend &amp; Microservices Engineer · Cloud Developer · Event-Driven Architect</p>
+                <p class="hero-description">
+                    Software Engineer with 3 years of experience designing and building robust backend systems and microservices using Java, Spring Boot, and Micronaut. Skilled in REST API development, deployments, and event-driven architectures with Apache Kafka, delivering scalable solutions across Agile teams.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#contact" class="btn btn-pink">Get in Touch</a>
+                    <a href="https://drive.google.com/file/d/1EhP5OzUxm9r6s0KjqcYZD0AInPirXT0C/view?usp=sharing" target="_blank" class="btn btn-outline">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.25rem"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                        View Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual reveal delay-200">
+                <div class="hero-animation-wrapper">
+                    <div id="hero-lottie"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-label">Expertise</div>
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="skills-grid reveal">
+                <div class="skills-left">
+                    <div class="skills-animation-box">
+                        <div id="skills-lottie"></div>
+                    </div>
+                    <div class="proficiency-container">
+                        <h4 class="proficiency-title">Core Proficiencies</h4>
+                        
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Backend Development (Java, Spring Boot, Micronaut)</span>
+                                <span>92%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill fill-backend" data-width="92%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Database Engineering (PostgreSQL, NoSQL, Prisma)</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill fill-db" data-width="85%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Cloud &amp; DevOps (Microsoft Azure, Kubernetes, Kafka)</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill fill-cloud" data-width="80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-bar-wrapper">
+                            <div class="skill-bar-info">
+                                <span>Frontend Development (React.js, HTML5, CSS3, JS)</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar-track">
+                                <div class="skill-bar-fill fill-frontend" data-width="65%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-cards-list">
+                    <!-- Languages -->
+                    <div class="skills-card">
+                        <h3><span class="skills-card-icon">💻</span>Languages</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill" data-tooltip="Primary Language">Java</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">C</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">HTML5</span>
+                            <span class="skill-pill">CSS3</span>
+                        </div>
+                    </div>
+
+                    <!-- Frameworks -->
+                    <div class="skills-card sage">
+                        <h3><span class="skills-card-icon">⚡</span>Frameworks &amp; Libraries</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill" data-tooltip="Core Backend">Spring Boot</span>
+                            <span class="skill-pill">Micronaut</span>
+                            <span class="skill-pill">Spring Cloud</span>
+                            <span class="skill-pill">Spring Security</span>
+                            <span class="skill-pill">React.js</span>
+                            <span class="skill-pill">Prisma Client</span>
+                            <span class="skill-pill">Prisma Studio</span>
+                            <span class="skill-pill">JUnit 5</span>
+                            <span class="skill-pill">JDBC</span>
+                        </div>
+                    </div>
+
+                    <!-- Technologies & Tools -->
+                    <div class="skills-card peach">
+                        <h3><span class="skills-card-icon">⚙️</span>Technologies &amp; Tools</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill" data-tooltip="Event Streaming">Apache Kafka</span>
+                            <span class="skill-pill">PostgreSQL</span>
+                            <span class="skill-pill">MongoDB</span>
+                            <span class="skill-pill">Microsoft Azure</span>
+                            <span class="skill-pill">Kubernetes</span>
+                            <span class="skill-pill">Docker</span>
+                            <span class="skill-pill">GitHub Actions</span>
+                            <span class="skill-pill">Git</span>
+                            <span class="skill-pill">PEGA</span>
+                            <span class="skill-pill">Dynatrace</span>
+                            <span class="skill-pill">New Relic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-label">Journey</div>
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-timeline">
+                
+                <!-- TCS -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div class="company-info">
+                                <div class="company-logo-placeholder">🏢</div>
+                                <div class="company-details">
+                                    <h3>TATA Consultancy Services</h3>
+                                    <p>Chennai, Tamil Nadu, India</p>
+                                </div>
+                            </div>
+                            <span class="timeline-date">Jun 2023 – Present</span>
+                        </div>
+                        <div class="timeline-role">System Engineer</div>
+                        <ul class="timeline-bullets">
+                            <li>Built and optimized <strong class="timeline-stat">11 Warehouse Integration Adapter Services</strong> using the Micronaut framework with Java, enabling secure file transmission and format transformation across warehouse and downstream applications.</li>
+                            <li>Designed RESTful APIs for NoSQL databases, handling <strong class="timeline-stat">1,000+ daily transactions</strong> to eliminate manual data entry across integrated systems.</li>
+                            <li>Integrated Apache Kafka message streaming to process <strong class="timeline-stat">1,000+ messages per day</strong> and decouple microservices.</li>
+                            <li>Migrated <strong class="timeline-stat">3 monolithic services</strong> to microservices using Docker and Kubernetes for containerized deployments.</li>
+                            <li>Developed a POC for package publishing and automated the release process using a <strong class="timeline-stat">GitHub Actions CI/CD pipeline</strong>, successfully adopted in 8 production services.</li>
+                            <li>Utilized Azure services (Blob Storage, Data Lake, Key Vault, Logic Apps) to automate <strong class="timeline-stat">15 workflows</strong>, handling secure file transformations and secret management.</li>
+                            <li>Configured New Relic dashboards, migrated observability to Dynatrace, and resolved production incidents within strict SLA targets.</li>
+                        </ul>
+                        <div class="timeline-attachments">
+                            <span class="attachment-pill"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>CI/CD POC Verified</span>
+                            <span class="attachment-pill"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Azure Infrastructure Configured</span>
+                            <span class="attachment-pill"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>Observability &amp; Dashboards</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-label">Creation</div>
+            <h2 class="section-title">Project Spotlight</h2>
+            <div class="projects-container reveal">
+                
+                <!-- Mash Clothing Spotlight Card -->
+                <div class="project-spotlight-card">
+                    <div class="project-visual">
+                        <div class="browser-mockup">
+                            <div class="browser-header">
+                                <div class="browser-dot dot-red"></div>
+                                <div class="browser-dot dot-yellow"></div>
+                                <div class="browser-dot dot-green"></div>
+                            </div>
+                            <div class="browser-body">
+                                <div class="mock-shop-hero">
+                                    <div class="mock-shop-title"></div>
+                                    <div class="mock-shop-sub"></div>
+                                </div>
+                                <div class="mock-items-grid">
+                                    <div class="mock-item-card">
+                                        <div class="mock-item-image"></div>
+                                        <div class="mock-item-line-1"></div>
+                                        <div class="mock-item-line-2"></div>
+                                    </div>
+                                    <div class="mock-item-card">
+                                        <div class="mock-item-image"></div>
+                                        <div class="mock-item-line-1"></div>
+                                        <div class="mock-item-line-2"></div>
+                                    </div>
+                                </div>
+                                <div class="mock-checkout-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                                    Order via WhatsApp →
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="project-tag"><img src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg" alt="React">React.js</span>
+                            <span class="project-tag"><img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="Express" style="filter:invert(0.5)">Node.js/Express</span>
+                            <span class="project-tag"><img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="PostgreSQL">PostgreSQL</span>
+                            <span class="project-tag"><img src="https://www.vectorlogo.zone/logos/prisma/prisma-icon.svg" alt="Prisma">Prisma ORM</span>
+                        </div>
+                        <h3 class="project-name">Mash Clothing</h3>
+                        <div class="project-subtitle">Full-Stack T-Shirt Shopping Platform</div>
+                        <p class="project-desc">
+                            A highly responsive e-commerce web application featuring storefront catalog display, a dynamic shopping cart system, and WhatsApp checkout integration.
+                        </p>
+                        <ul class="project-features">
+                            <li><strong>Full-Stack Architecture:</strong> Integrated React storefront seamlessly with a backend Node/Express API server.</li>
+                            <li><strong>Database Integration:</strong> Connected Neon Cloud PostgreSQL using Prisma ORM for inventory mapping and orders storage.</li>
+                            <li><strong>REST API Design:</strong> Structured and secured 4+ core product endpoints, documented via Swagger UI (OpenAPI).</li>
+                            <li><strong>Automated Sales Campaigns:</strong> Implemented a scheduler engine for discounts and storefront sale countdowns.</li>
+                            <li><strong>Security Hardening:</strong> Hardened configurations by removing hardcoded credentials and Whitelisting CORS.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certs">
+        <div class="container">
+            <div class="section-label">Credentials</div>
+            <h2 class="section-title">Certifications</h2>
+            <div class="certs-grid reveal">
+                
+                <!-- PEGA -->
+                <div class="cert-card">
+                    <div class="cert-icon">🏆</div>
+                    <h3>PEGA Certified Senior System Architect (PCSA 8.7V1)</h3>
+                    <div class="cert-issuer">Pegasystems</div>
+                </div>
+
+                <!-- Azure AZ-900 -->
+                <div class="cert-card">
+                    <div class="cert-icon">☁️</div>
+                    <h3>Microsoft Azure Fundamentals (AZ-900)</h3>
+                    <div class="cert-issuer">Microsoft</div>
+                </div>
+
+                <!-- Azure DP-900 -->
+                <div class="cert-card">
+                    <div class="cert-icon">🗄️</div>
+                    <h3>Microsoft Azure Data Fundamentals (DP-900)</h3>
+                    <div class="cert-issuer">Microsoft</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="container">
+            <div class="section-label">Academic Background</div>
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid reveal">
+                
+                <!-- College -->
+                <div class="education-card featured">
+                    <div class="education-header">
+                        <div class="education-degree">B.Tech — Information Technology</div>
+                        <div class="education-school">Sri Sai Ram Institute of Technology, Chennai</div>
+                    </div>
+                    <div class="education-meta">
+                        <span class="education-year">2019 – 2023</span>
+                        <span class="education-score">CGPA 8.33 / 10</span>
+                    </div>
+                </div>
+
+                <!-- High School -->
+                <div class="education-card">
+                    <div class="education-header">
+                        <div class="education-degree">Higher Secondary Certificate (HSC)</div>
+                        <div class="education-school">Shri Natesan Vidyasala Matriculation Higher Secondary School, Chennai</div>
+                    </div>
+                    <div class="education-meta">
+                        <span class="education-year">2018 – 2019</span>
+                        <span class="education-score">Percentage 65.17%</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container contact-grid reveal">
+            <div class="contact-left">
+                <div class="section-label">Let's Connect</div>
+                <h2 class="section-title" style="margin-bottom:1.5rem">Get In Touch</h2>
+                <p class="contact-text">
+                    Discuss a project or just want to say hi? My Inbox is open for all. Open to interesting software engineering and backend microservices roles!
+                </p>
+                <div class="contact-info-list">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">📍</div>
+                        <span>Chennai, Tamil Nadu, India</span>
+                    </div>
+                    <div class="contact-info-item sage">
+                        <div class="contact-info-icon">📧</div>
+                        <span>kr.swarnapriya@gmail.com</span>
+                    </div>
+                </div>
+                <div class="contact-links">
+                    <a class="contact-pill mail" href="mailto:kr.swarnapriya@gmail.com">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:0.25rem"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        Mail
+                    </a>
+                    <a class="contact-pill linkedin" href="https://linkedin.com/in/swarnapriyar" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="margin-right:0.25rem"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LinkedIn
+                    </a>
+                    <a class="contact-pill github" href="https://github.com/swarnapriyar" target="_blank">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" style="margin-right:0.25rem"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+            <div class="contact-visual">
+                <div class="contact-animation-wrapper">
+                    <div id="contact-lottie"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="footer-text">© 2026 Swarna Priya R · Chennai, India</p>
+        <span class="footer-meta">Built with Care ✦ Pastel Theme</span>
+    </footer>
+
+    <!-- JS Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/lottie-loader.js"></script>
+</body>
+</html>

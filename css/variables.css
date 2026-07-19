@@ -1,0 +1,77 @@
+/* CSS variables for MyPortfolio */
+:root {
+    /* Font definitions */
+    --font-heading: 'Outfit', 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Theme-independent layout variables */
+    --navbar-height: 80px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* LIGHT MODE COLORS (Default) */
+    --bg-primary: #fff8f8; /* Soft pink-white background */
+    --bg-secondary: #ffffff; /* Card background */
+    --bg-tertiary: #f9fafb;
+    --text-primary: #1f2937; /* Dark gray */
+    --text-secondary: #4b5563; /* Medium gray */
+    --text-muted: #9ca3af;
+    
+    /* Pastel Accents */
+    --color-pink: #fbcfe8; /* Pastel pink base */
+    --color-pink-dark: #ec4899; /* Stronger pink for accents */
+    --color-pink-light: #fdf2f8; /* Extra light pink background */
+    
+    --color-sage: #bbf7d0; /* Pastel sage green base */
+    --color-sage-dark: #10b981; /* Stronger green for accents */
+    --color-sage-light: #f0fdf4; /* Extra light green background */
+    
+    --color-peach: #ffedd5; /* Pastel peach base */
+    --color-peach-dark: #f97316; /* Stronger peach for accents */
+    --color-peach-light: #fff7ed; /* Extra light peach background */
+    
+    --accent-primary: #ec4899; /* Primary pink accent */
+    --border-color: #f3f4f6;
+    --card-shadow: 0 10px 30px -10px rgba(236, 72, 153, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+    --card-shadow-hover: 0 20px 40px -15px rgba(236, 72, 153, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    
+    --navbar-bg: rgba(255, 248, 248, 0.85);
+    --navbar-border: rgba(243, 244, 246, 0.5);
+    --footer-bg: #fff1f2;
+}
+
+/* DARK MODE COLORS */
+[data-theme="dark"] {
+    --bg-primary: #121214; /* Warm deep slate-black background */
+    --bg-secondary: #1a1a1e; /* Core card background */
+    --bg-tertiary: #222227;
+    --text-primary: #f9fafb; /* Off-white text */
+    --text-secondary: #d1d5db; /* Light gray text */
+    --text-muted: #6b7280;
+
+    /* Pastel Accents in Dark Mode (Glow adjustments) */
+    --color-pink: #ec4899; /* Hotter pink for dark contrast */
+    --color-pink-dark: #fbcfe8; /* Soft pink for hover text */
+    --color-pink-light: #2d1622; /* Dark pink glow background */
+    
+    --color-sage: #10b981; /* Hotter green for dark contrast */
+    --color-sage-dark: #bbf7d0; /* Soft green for hover text */
+    --color-sage-light: #122c1e; /* Dark green glow background */
+    
+    --color-peach: #f97316; /* Hotter peach for dark contrast */
+    --color-peach-dark: #ffedd5; /* Soft peach for hover text */
+    --color-peach-light: #321d12; /* Dark peach glow background */
+    
+    --accent-primary: #fbcfe8;
+    --border-color: #2b2b30;
+    --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
+    --card-shadow-hover: 0 20px 40px -15px rgba(236, 72, 153, 0.25);
+    
+    --navbar-bg: rgba(18, 18, 20, 0.85);
+    --navbar-border: rgba(43, 43, 48, 0.5);
+    --footer-bg: #161619;
+}
