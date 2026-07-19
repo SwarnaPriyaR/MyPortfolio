@@ -40,6 +40,12 @@ nav {
     transition: transform var(--transition-fast);
 }
 
+[data-theme="dark"] .nav-logo {
+    background: linear-gradient(45deg, var(--color-pink-dark), var(--color-sage-dark));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
 .nav-logo:hover {
     transform: scale(1.03);
 }
