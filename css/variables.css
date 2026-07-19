@@ -1,0 +1,93 @@
+/* CSS variables for MyPortfolio */
+:root {
+    /* Font definitions */
+    --font-heading: 'Outfit', 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+
+    /* Theme-independent layout variables */
+    --navbar-height: 80px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 16px;
+    --border-radius-lg: 24px;
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* LIGHT MODE COLORS (Pastel Sky Blue background and Pastel Yellow cards) */
+    --bg-primary: #B4E1EB; /* Pastel sky blue page background */
+    --bg-secondary: #F9E8A2; /* Pastel yellow card background */
+    --bg-tertiary: #a4d7e1; /* Slightly darker pastel sky blue for active elements */
+    --text-primary: #0f172a; /* Slate primary text */
+    --text-secondary: #334155; /* Slate secondary text */
+    --text-muted: #64748b;
+    
+    /* Pastel Accents in Light Mode */
+    --color-sage: #F9E8A2; /* Map accents to pastel yellow */
+    --color-sage-dark: #b59523; /* Darker mustard yellow for icons/accent text */
+    --color-sage-light: #F9E8A2;
+    
+    --color-pink: #F9E8A2;
+    --color-pink-dark: #b59523;
+    --color-pink-light: #F9E8A2;
+    
+    --color-peach: #F9E8A2;
+    --color-peach-dark: #b59523;
+    --color-peach-light: #F9E8A2;
+    
+    --accent-primary: #b59523; /* Mustard yellow primary accent */
+    --border-color: #92cbd6; /* Cohesive sky blue border */
+    --card-shadow: 0 8px 32px 0 rgba(146, 203, 214, 0.3);
+    --card-shadow-hover: 0 20px 40px -15px rgba(146, 203, 214, 0.5);
+    
+    --navbar-bg: rgba(180, 225, 235, 0.85); /* Cohesive sky blue navbar */
+    --navbar-border: rgba(146, 203, 214, 0.4);
+    --footer-bg: #a4d7e1; /* Matching sky blue footer */
+
+    /* Card background color mappings in Light Mode */
+    --card-bg-pink: rgba(249, 232, 162, 0.82);
+    --card-bg-sage: rgba(249, 232, 162, 0.82);
+    --card-bg-peach: rgba(249, 232, 162, 0.82);
+    --card-border: 1px solid rgba(255, 255, 255, 0.5);
+    --card-border-hover: 1px solid rgba(255, 255, 255, 0.85);
+    --card-backdrop-blur: blur(16px);
+}
+
+/* DARK MODE COLORS (Midnight Blue Dominant, Soft Cherry Red accents) */
+[data-theme="dark"] {
+    --bg-primary: #080c18; /* Rich Midnight Blue background */
+    --bg-secondary: #101a35; /* Lighter Midnight Blue card background */
+    --bg-tertiary: #18264e; /* Darker Midnight Blue block background */
+    --text-primary: #f8fafc; /* Off-white primary text */
+    --text-secondary: #cbd5e1; /* Soft gray secondary text */
+    --text-muted: #64748b;
+
+    /* Cherry Red Accents in Dark Mode (Softer, lower intensity red) */
+    --color-pink: #fda4af; /* Soft Cherry Red base */
+    --color-pink-dark: #f43f5e; /* Pastel Cherry Red accent */
+    --color-pink-light: #311019; /* Deep dark cherry glow background */
+    
+    --color-sage: #818cf8; /* Supporting Indigo base */
+    --color-sage-dark: #6366f1; /* Rich Indigo accent */
+    --color-sage-light: #1a1c3d; /* Dark Indigo background */
+    
+    --color-peach: #fca5a5; /* Soft Coral highlight */
+    --color-peach-dark: #f87171; /* Rich Coral text */
+    --color-peach-light: #361414; /* Dark Coral background */
+    
+    --accent-primary: #fda4af; /* Primary accent is Soft Cherry Red */
+    --border-color: rgba(244, 63, 94, 0.12); /* Midnight blue border */
+    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    --card-shadow-hover: 0 20px 40px -15px rgba(244, 63, 94, 0.3); /* Cherry red shadow glow */
+    
+    --navbar-bg: rgba(8, 12, 24, 0.8);
+    --navbar-border: rgba(244, 63, 94, 0.12);
+    --footer-bg: #050811;
+
+    /* Card background color mappings in Dark Mode (fallback to default secondary card bg) */
+    --card-bg-pink: rgba(16, 26, 53, 0.75);
+    --card-bg-sage: rgba(16, 26, 53, 0.75);
+    --card-bg-peach: rgba(16, 26, 53, 0.75);
+    --card-border: 1px solid rgba(244, 63, 94, 0.15);
+    --card-border-hover: 1px solid rgba(244, 63, 94, 0.4);
+    --card-backdrop-blur: blur(16px);
+}

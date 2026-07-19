@@ -1,0 +1,175 @@
+/* Hero/Greeting section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--navbar-height);
+    background: transparent;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-eyebrow {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--accent-primary);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+[data-theme="dark"] .hero-eyebrow {
+    color: var(--color-pink-dark);
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    letter-spacing: -1.5px;
+}
+
+.hero-title em {
+    font-style: normal;
+    background: linear-gradient(120deg, var(--accent-primary) 0%, var(--text-secondary) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+[data-theme="dark"] .hero-title em {
+    background: linear-gradient(120deg, var(--color-pink-dark) 0%, var(--color-peach-dark) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--accent-primary);
+    padding-left: 1rem;
+}
+
+.hero-description {
+    font-size: 1.05rem;
+    color: var(--text-secondary);
+    margin-bottom: 3rem;
+    max-width: 600px;
+}
+
+.hero-ctas {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.hero-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+dotlottie-wc {
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    transition: transform var(--transition-normal);
+}
+
+dotlottie-wc:hover {
+    transform: scale(1.05);
+}
+
+/* Floating background icons/shapes */
+.hero-visual::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--accent-primary);
+    filter: blur(60px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.hero-visual::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 120px;
+    height: 120px;
+    background-color: var(--border-color);
+    filter: blur(60px);
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Responsive sizes */
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding-top: 100px;
+        padding-bottom: 50px;
+        min-height: auto;
+    }
+    
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .hero-content {
+        order: 1;
+        text-align: center;
+    }
+    
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-subtitle {
+        border-left: none;
+        border-bottom: 2px solid var(--accent-primary);
+        padding-left: 0;
+        padding-bottom: 0.5rem;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-ctas {
+        justify-content: center;
+    }
+    
+    .hero-visual {
+        order: 2;
+    }
+    
+    .hero-animation-wrapper {
+        height: 300px;
+    }
+}

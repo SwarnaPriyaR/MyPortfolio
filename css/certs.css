@@ -1,0 +1,113 @@
+/* Certifications section */
+.certs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.cert-card {
+    background-color: var(--card-bg-peach);
+    border: var(--card-border);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cert-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: var(--accent-primary);
+    opacity: 0.8;
+}
+
+.cert-card:nth-child(2) {
+    background-color: var(--card-bg-pink);
+}
+
+.cert-card:nth-child(2)::before {
+    background-color: var(--accent-primary);
+}
+
+.cert-card:nth-child(3) {
+    background-color: var(--card-bg-sage);
+}
+
+.cert-card:nth-child(3)::before {
+    background-color: var(--accent-primary);
+}
+
+.cert-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--card-shadow-hover);
+    border: var(--card-border-hover);
+}
+
+.cert-icon {
+    font-size: 2.25rem;
+    background-color: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    width: 55px;
+    height: 55px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.cert-icon img {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: contain;
+}
+
+.cert-card h3 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-primary);
+}
+
+.cert-issuer {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+.cert-issuer::before {
+    content: '•';
+    color: var(--color-peach-dark);
+    font-size: 1.25rem;
+}
+
+.cert-card:nth-child(2) .cert-issuer::before {
+    color: var(--color-pink-dark);
+}
+
+.cert-card:nth-child(3) .cert-issuer::before {
+    color: var(--color-sage-dark);
+}
+
+/* Responsive sizes */
+@media (max-width: 480px) {
+    .certs-grid {
+        grid-template-columns: 1fr;
+    }
+}

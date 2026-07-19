@@ -1,0 +1,249 @@
+/* Career timeline and experience cards */
+.experience-timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 41px;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, var(--accent-primary) 0%, rgba(255,255,255,0) 100%);
+    opacity: 0.6;
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 90px;
+    margin-bottom: 4rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Timeline dot/node pulse ring */
+.timeline-dot {
+    position: absolute;
+    top: 14px;
+    left: 32px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--accent-primary);
+    z-index: 2;
+    transition: all var(--transition-normal);
+    box-shadow: 0 0 0 4px var(--bg-primary);
+}
+
+.timeline-dot::after {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid var(--accent-primary);
+    animation: pulse-ring 2s infinite ease-out;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.6);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.4);
+        opacity: 0;
+    }
+}
+
+.timeline-item:hover .timeline-dot {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px var(--accent-primary), 0 0 0 4px var(--bg-primary);
+}
+
+/* Timeline card content */
+.timeline-card {
+    background-color: var(--card-bg-sage);
+    border: var(--card-border);
+    border-radius: var(--border-radius-lg);
+    padding: 2.5rem;
+    box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
+    transition: all var(--transition-normal);
+    position: relative;
+}
+
+.timeline-card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: var(--card-shadow-hover);
+    border: var(--card-border-hover);
+}
+
+.timeline-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.company-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-logo-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--color-pink-dark);
+    flex-shrink: 0;
+}
+
+.timeline-item:nth-child(even) .company-logo-placeholder {
+    color: var(--color-sage-dark);
+}
+
+.company-details h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.company-details p {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.timeline-date {
+    font-family: var(--font-heading);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 1rem;
+    border-radius: 50px;
+}
+
+.timeline-role {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--color-pink-dark);
+    margin-bottom: 1rem;
+}
+
+.timeline-item:nth-child(even) .timeline-role {
+    color: var(--color-sage-dark);
+}
+
+.timeline-bullets {
+    margin-bottom: 2rem;
+    padding-left: 1.25rem;
+    list-style-type: square;
+}
+
+.timeline-bullets li {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+}
+
+.timeline-bullets li strong {
+    color: var(--text-primary);
+}
+
+/* Attachments/Links in Cards */
+.timeline-attachments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    border-top: 1px dashed var(--border-color);
+    padding-top: 1.5rem;
+}
+
+.attachment-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-color);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.attachment-pill svg {
+    color: var(--text-muted);
+    transition: color var(--transition-fast);
+}
+
+.attachment-pill:hover {
+    background-color: var(--color-pink-light);
+    border-color: var(--color-pink);
+    color: var(--color-pink-dark);
+    transform: translateY(-2px);
+}
+
+.timeline-item:nth-child(even) .attachment-pill:hover {
+    background-color: var(--color-sage-light);
+    border-color: var(--color-sage);
+    color: var(--color-sage-dark);
+}
+
+.attachment-pill:hover svg {
+    color: inherit;
+}
+
+/* Responsive sizes */
+@media (max-width: 768px) {
+    .experience-timeline::before {
+        left: 20px;
+    }
+    
+    .timeline-dot {
+        left: 8px;
+    }
+    
+    .timeline-item {
+        padding-left: 45px;
+    }
+    
+    .timeline-card {
+        padding: 1.5rem;
+    }
+    
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .timeline-date {
+        align-self: flex-start;
+    }
+}
