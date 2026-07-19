@@ -13,18 +13,18 @@
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
 
-    /* LIGHT MODE COLORS (Default - Sage Green Dominant, Pink & Peach accents) */
-    --bg-primary: #f0fdf4; /* Soft sage green background */
+    /* LIGHT MODE COLORS (Default - Saturated Sage Green Dominant, Pink & Peach accents) */
+    --bg-primary: #eaf8f0; /* More opaque, prominent sage green background */
     --bg-secondary: #ffffff; /* Pure white card background */
-    --bg-tertiary: #e6f6ed; /* Soft sage tertiary background */
-    --text-primary: #1e293b; /* Charcoal primary text */
-    --text-secondary: #475569; /* Slate secondary text */
-    --text-muted: #94a3b8;
+    --bg-tertiary: #d8f3e5; /* Deeper, more intense sage tertiary background */
+    --text-primary: #0f172a; /* Slate primary text */
+    --text-secondary: #334155; /* Slate secondary text */
+    --text-muted: #64748b;
     
     /* Pastel Accents in Light Mode */
-    --color-sage: #bbf7d0; /* Sage Green base */
-    --color-sage-dark: #059669; /* Dominant sage accent */
-    --color-sage-light: #f0fdf4; /* Sage light background */
+    --color-sage: #a7f3d0; /* Saturated Sage Green base */
+    --color-sage-dark: #065f46; /* Deeper sage green accent */
+    --color-sage-light: #d1fae5; /* Intense light sage background */
     
     --color-pink: #fbcfe8; /* Pastel pink highlight */
     --color-pink-dark: #db2777; /* Pastel pink dark text */
@@ -34,17 +34,17 @@
     --color-peach-dark: #ea580c; /* Pastel peach dark text */
     --color-peach-light: #fff7ed; /* Light peach background */
     
-    --accent-primary: #059669; /* Primary accent is Sage Green */
-    --border-color: #e2e8f0;
-    --card-shadow: 0 10px 30px -10px rgba(5, 150, 105, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
-    --card-shadow-hover: 0 20px 40px -15px rgba(5, 150, 105, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --accent-primary: #065f46; /* Primary accent is deep Sage Green */
+    --border-color: #cbd5e1; /* Opaque borders for better visibility */
+    --card-shadow: 0 10px 30px -10px rgba(6, 95, 70, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+    --card-shadow-hover: 0 20px 40px -15px rgba(6, 95, 70, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     
-    --navbar-bg: rgba(240, 253, 244, 0.85);
-    --navbar-border: rgba(226, 232, 240, 0.5);
-    --footer-bg: #e6f6ed;
+    --navbar-bg: rgba(234, 248, 240, 0.9);
+    --navbar-border: rgba(203, 213, 225, 0.5);
+    --footer-bg: #d8f3e5;
 }
 
-/* DARK MODE COLORS (Midnight Blue Dominant, Purple accents) */
+/* DARK MODE COLORS (Midnight Blue Dominant, Soft Cherry Red accents) */
 [data-theme="dark"] {
     --bg-primary: #080c18; /* Rich Midnight Blue background */
     --bg-secondary: #101a35; /* Lighter Midnight Blue card background */
@@ -53,23 +53,23 @@
     --text-secondary: #cbd5e1; /* Soft gray secondary text */
     --text-muted: #64748b;
 
-    /* Purple Accents in Dark Mode (Glow adjustments) */
-    --color-pink: #c084fc; /* Pastel Purple base */
-    --color-pink-dark: #a855f7; /* Rich Purple accent */
-    --color-pink-light: #25183a; /* Dark Purple glow background */
+    /* Cherry Red Accents in Dark Mode (Softer, lower intensity red) */
+    --color-pink: #fda4af; /* Soft Cherry Red base */
+    --color-pink-dark: #f43f5e; /* Pastel Cherry Red accent */
+    --color-pink-light: #311019; /* Deep dark cherry glow background */
     
-    --color-sage: #818cf8; /* Pastel Indigo base (supporting purple) */
+    --color-sage: #818cf8; /* Supporting Indigo base */
     --color-sage-dark: #6366f1; /* Rich Indigo accent */
     --color-sage-light: #1a1c3d; /* Dark Indigo background */
     
-    --color-peach: #e879f9; /* Violet/Fuchsia highlight */
-    --color-peach-dark: #d946ef; /* Rich Violet text */
-    --color-peach-light: #2c1235; /* Dark Violet background */
+    --color-peach: #fca5a5; /* Soft Coral highlight */
+    --color-peach-dark: #f87171; /* Rich Coral text */
+    --color-peach-light: #361414; /* Dark Coral background */
     
-    --accent-primary: #c084fc; /* Primary accent is Purple */
+    --accent-primary: #fda4af; /* Primary accent is Soft Cherry Red */
     --border-color: #1e294b; /* Midnight blue border */
     --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
-    --card-shadow-hover: 0 20px 40px -15px rgba(129, 140, 248, 0.25);
+    --card-shadow-hover: 0 20px 40px -15px rgba(244, 63, 94, 0.25); /* Cherry red shadow glow */
     
     --navbar-bg: rgba(8, 12, 24, 0.85);
     --navbar-border: rgba(30, 41, 75, 0.5);
