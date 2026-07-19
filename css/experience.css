@@ -156,18 +156,6 @@
     color: var(--text-primary);
 }
 
-.timeline-stat {
-    font-weight: 600;
-    color: var(--text-primary);
-    background-color: var(--color-pink-light);
-    padding: 0.1rem 0.3rem;
-    border-radius: 4px;
-}
-
-.timeline-item:nth-child(even) .timeline-stat {
-    background-color: var(--color-sage-light);
-}
-
 /* Attachments/Links in Cards */
 .timeline-attachments {
     display: flex;
