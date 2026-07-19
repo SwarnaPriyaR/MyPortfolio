@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="940b8e1b-2ac1-4059-84f6-bfb56d117c5e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    <list default="true" id="940b8e1b-2ac1-4059-84f6-bfb56d117c5e" name="Changes" comment="add initial theme, animations, and layout styles for portfolio">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +87,35 @@
       <option name="presentableId" value="Default" />
       <updated>1780746851286</updated>
     </task>
+    <task id="LOCAL-00001" summary="add initial theme, animations, and layout styles for portfolio">
+      <option name="closed" value="true" />
+      <created>1784463920317</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784463920317</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add initial theme, animations, and layout styles for portfolio">
+      <option name="closed" value="true" />
+      <created>1784464120140</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784464120140</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add initial theme, animations, and layout styles for portfolio">
+      <option name="closed" value="true" />
+      <created>1784464201601</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784464201601</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add initial theme, animations, and layout styles for portfolio" />
+    <option name="LAST_COMMIT_MESSAGE" value="add initial theme, animations, and layout styles for portfolio" />
   </component>
 </project>
