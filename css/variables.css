@@ -36,17 +36,20 @@
     
     --accent-primary: #b59523; /* Mustard yellow primary accent */
     --border-color: #92cbd6; /* Cohesive sky blue border */
-    --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
-    --card-shadow-hover: 0 20px 40px -15px rgba(15, 23, 42, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --card-shadow: 0 8px 32px 0 rgba(146, 203, 214, 0.3);
+    --card-shadow-hover: 0 20px 40px -15px rgba(146, 203, 214, 0.5);
     
-    --navbar-bg: rgba(180, 225, 235, 0.95); /* Cohesive sky blue navbar */
-    --navbar-border: rgba(146, 203, 214, 0.5);
+    --navbar-bg: rgba(180, 225, 235, 0.85); /* Cohesive sky blue navbar */
+    --navbar-border: rgba(146, 203, 214, 0.4);
     --footer-bg: #a4d7e1; /* Matching sky blue footer */
 
     /* Card background color mappings in Light Mode */
-    --card-bg-pink: #F9E8A2;
-    --card-bg-sage: #F9E8A2;
-    --card-bg-peach: #F9E8A2;
+    --card-bg-pink: rgba(249, 232, 162, 0.82);
+    --card-bg-sage: rgba(249, 232, 162, 0.82);
+    --card-bg-peach: rgba(249, 232, 162, 0.82);
+    --card-border: 1px solid rgba(255, 255, 255, 0.5);
+    --card-border-hover: 1px solid rgba(255, 255, 255, 0.85);
+    --card-backdrop-blur: blur(16px);
 }
 
 /* DARK MODE COLORS (Midnight Blue Dominant, Soft Cherry Red accents) */
@@ -72,16 +75,19 @@
     --color-peach-light: #361414; /* Dark Coral background */
     
     --accent-primary: #fda4af; /* Primary accent is Soft Cherry Red */
-    --border-color: #1e294b; /* Midnight blue border */
-    --card-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.6);
-    --card-shadow-hover: 0 20px 40px -15px rgba(244, 63, 94, 0.25); /* Cherry red shadow glow */
+    --border-color: rgba(244, 63, 94, 0.12); /* Midnight blue border */
+    --card-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.35);
+    --card-shadow-hover: 0 20px 40px -15px rgba(244, 63, 94, 0.3); /* Cherry red shadow glow */
     
-    --navbar-bg: rgba(8, 12, 24, 0.85);
-    --navbar-border: rgba(30, 41, 75, 0.5);
+    --navbar-bg: rgba(8, 12, 24, 0.8);
+    --navbar-border: rgba(244, 63, 94, 0.12);
     --footer-bg: #050811;
 
     /* Card background color mappings in Dark Mode (fallback to default secondary card bg) */
-    --card-bg-pink: var(--bg-secondary);
-    --card-bg-sage: var(--bg-secondary);
-    --card-bg-peach: var(--bg-secondary);
+    --card-bg-pink: rgba(16, 26, 53, 0.75);
+    --card-bg-sage: rgba(16, 26, 53, 0.75);
+    --card-bg-peach: rgba(16, 26, 53, 0.75);
+    --card-border: 1px solid rgba(244, 63, 94, 0.15);
+    --card-border-hover: 1px solid rgba(244, 63, 94, 0.4);
+    --card-backdrop-blur: blur(16px);
 }

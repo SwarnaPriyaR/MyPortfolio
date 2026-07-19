@@ -7,10 +7,12 @@
 
 .education-card {
     background-color: var(--card-bg-peach);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-md);
+    border: var(--card-border);
+    border-radius: var(--border-radius-lg);
     padding: 2.5rem;
     box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
@@ -30,17 +32,13 @@
     left: 0;
     width: 100%;
     height: 4px;
-    background: linear-gradient(90deg, var(--color-pink), var(--color-sage));
+    background: linear-gradient(90deg, var(--accent-primary), var(--text-secondary));
 }
 
 .education-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.01);
     box-shadow: var(--card-shadow-hover);
-    border-color: var(--color-pink);
-}
-
-.education-card.featured:hover {
-    border-color: var(--color-sage);
+    border: var(--card-border-hover);
 }
 
 .education-header {

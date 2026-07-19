@@ -9,10 +9,12 @@
     flex-direction: column;
     gap: 3rem;
     background-color: var(--card-bg-peach);
-    border: 1px solid var(--border-color);
+    border: var(--card-border);
     border-radius: var(--border-radius-lg);
     padding: 3rem;
     box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
@@ -31,9 +33,9 @@
 }
 
 .project-spotlight-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.01);
     box-shadow: var(--card-shadow-hover);
-    border-color: var(--color-pink);
+    border: var(--card-border-hover);
 }
 
 /* Visual Mockup inside card */
@@ -45,21 +47,22 @@
 
 .browser-mockup {
     background-color: var(--bg-primary);
-    border: 1px solid var(--border-color);
-    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
-    transition: transform var(--transition-normal);
+    transition: all var(--transition-normal);
     width: 100%;
 }
 
 [data-theme="dark"] .browser-mockup {
+    border: 1px solid rgba(244, 63, 94, 0.08);
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
     background-color: var(--bg-tertiary);
 }
 
 .browser-mockup:hover {
-    transform: scale(1.02) rotate(-1deg);
+    transform: translateY(-4px) scale(1.01);
 }
 
 .browser-header {

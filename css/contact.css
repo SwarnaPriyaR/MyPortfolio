@@ -37,25 +37,19 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: var(--color-pink-light);
-    border: 1px solid var(--color-pink);
-    color: var(--color-pink-dark);
+    background-color: var(--bg-secondary);
+    border: var(--card-border);
+    color: var(--accent-primary);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.1rem;
 }
 
-.contact-info-item.sage .contact-info-icon {
-    background-color: var(--color-sage-light);
-    border-color: var(--color-sage);
-    color: var(--color-sage-dark);
-}
-
 .contact-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 .contact-pill {
@@ -69,58 +63,19 @@
     font-weight: 600;
     transition: all var(--transition-normal);
     box-shadow: var(--card-shadow);
-    border: 1px solid var(--border-color);
+    border: var(--card-border);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
 }
 
-/* Mail/Gmail Pill */
-.contact-pill.mail {
-    background-color: var(--color-pink-light);
-    border-color: var(--color-pink);
-    color: var(--color-pink-dark);
-}
-
-.contact-pill.mail:hover {
-    background-color: var(--color-pink-dark);
-    color: #ffffff;
-    transform: translateY(-3px);
-}
-
-/* LinkedIn Pill */
-.contact-pill.linkedin {
-    background-color: #e0f2fe;
-    border-color: #bae6fd;
-    color: #0369a1;
-}
-
-.contact-pill.linkedin:hover {
-    background-color: #0284c7;
-    color: #ffffff;
-    transform: translateY(-3px);
-}
-
-/* GitHub Pill */
-.contact-pill.github {
-    background-color: #f3f4f6;
-    border-color: #e5e7eb;
-    color: #1f2937;
-}
-
-.contact-pill.github:hover {
-    background-color: #111827;
-    color: #ffffff;
-    transform: translateY(-3px);
-}
-
-[data-theme="dark"] .contact-pill.github {
-    background-color: #1f2937;
-    border-color: #374151;
-    color: #f9fafb;
-}
-
-[data-theme="dark"] .contact-pill.github:hover {
-    background-color: #f9fafb;
-    color: #111827;
-    border-color: #f9fafb;
+.contact-pill:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--card-shadow-hover);
+    border: var(--card-border-hover);
+    background-color: var(--accent-primary);
+    color: var(--bg-primary);
 }
 
 .contact-visual {

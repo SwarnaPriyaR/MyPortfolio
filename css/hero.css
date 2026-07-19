@@ -4,8 +4,7 @@
     display: flex;
     align-items: center;
     padding-top: var(--navbar-height);
-    background: radial-gradient(circle at 80% 20%, var(--color-pink-light) 0%, transparent 40%),
-                radial-gradient(circle at 10% 80%, var(--color-sage-light) 0%, transparent 35%);
+    background: transparent;
 }
 
 .hero-grid {
@@ -25,7 +24,7 @@
     font-family: var(--font-heading);
     font-size: 1.1rem;
     font-weight: 600;
-    color: var(--color-pink-dark);
+    color: var(--accent-primary);
     margin-bottom: 1rem;
     letter-spacing: 1px;
 }
@@ -39,7 +38,7 @@
 
 .hero-title em {
     font-style: normal;
-    background: linear-gradient(120deg, var(--color-pink-dark) 0%, var(--color-peach-dark) 100%);
+    background: linear-gradient(120deg, var(--accent-primary) 0%, var(--text-secondary) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +49,7 @@
     font-weight: 500;
     color: var(--text-secondary);
     margin-bottom: 2rem;
-    border-left: 3px solid var(--color-sage-dark);
+    border-left: 3px solid var(--accent-primary);
     padding-left: 1rem;
 }
 
@@ -94,9 +93,9 @@ dotlottie-wc:hover {
     right: -20px;
     width: 100px;
     height: 100px;
-    background-color: var(--color-pink);
+    background-color: var(--accent-primary);
     filter: blur(60px);
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -107,9 +106,9 @@ dotlottie-wc:hover {
     left: -20px;
     width: 120px;
     height: 120px;
-    background-color: var(--color-sage);
+    background-color: var(--border-color);
     filter: blur(60px);
-    opacity: 0.5;
+    opacity: 0.3;
     z-index: -1;
 }
 
@@ -144,7 +143,7 @@ dotlottie-wc:hover {
     
     .hero-subtitle {
         border-left: none;
-        border-bottom: 2px solid var(--color-sage-dark);
+        border-bottom: 2px solid var(--accent-primary);
         padding-left: 0;
         padding-bottom: 0.5rem;
         display: inline-block;

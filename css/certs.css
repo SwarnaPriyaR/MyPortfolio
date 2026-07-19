@@ -7,10 +7,12 @@
 
 .cert-card {
     background-color: var(--card-bg-peach);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-md);
+    border: var(--card-border);
+    border-radius: var(--border-radius-lg);
     padding: 2rem;
     box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
@@ -26,7 +28,8 @@
     left: 0;
     width: 4px;
     height: 100%;
-    background-color: var(--color-peach-dark);
+    background-color: var(--accent-primary);
+    opacity: 0.8;
 }
 
 .cert-card:nth-child(2) {
@@ -34,7 +37,7 @@
 }
 
 .cert-card:nth-child(2)::before {
-    background-color: var(--color-pink-dark);
+    background-color: var(--accent-primary);
 }
 
 .cert-card:nth-child(3) {
@@ -42,21 +45,13 @@
 }
 
 .cert-card:nth-child(3)::before {
-    background-color: var(--color-sage-dark);
+    background-color: var(--accent-primary);
 }
 
 .cert-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.01);
     box-shadow: var(--card-shadow-hover);
-    border-color: var(--color-pink);
-}
-
-.cert-card:nth-child(2)::hover {
-    border-color: var(--color-pink);
-}
-
-.cert-card:nth-child(3)::hover {
-    border-color: var(--color-sage);
+    border: var(--card-border-hover);
 }
 
 .cert-icon {

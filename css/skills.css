@@ -80,10 +80,12 @@
 
 .skills-card {
     background-color: var(--card-bg-pink);
-    border: 1px solid var(--border-color);
-    border-radius: var(--border-radius-md);
+    border: var(--card-border);
+    border-radius: var(--border-radius-lg);
     padding: 2rem;
     box-shadow: var(--card-shadow);
+    backdrop-filter: var(--card-backdrop-blur);
+    -webkit-backdrop-filter: var(--card-backdrop-blur);
     transition: all var(--transition-normal);
     position: relative;
     overflow: hidden;
@@ -96,7 +98,8 @@
     left: 0;
     width: 4px;
     height: 100%;
-    background-color: var(--color-pink);
+    background-color: var(--accent-primary);
+    opacity: 0.8;
 }
 
 .skills-card.sage {
@@ -104,7 +107,7 @@
 }
 
 .skills-card.sage::before {
-    background-color: var(--color-sage-dark);
+    background-color: var(--accent-primary);
 }
 
 .skills-card.peach {
@@ -112,21 +115,13 @@
 }
 
 .skills-card.peach::before {
-    background-color: var(--color-peach-dark);
+    background-color: var(--accent-primary);
 }
 
 .skills-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.01);
     box-shadow: var(--card-shadow-hover);
-    border-color: var(--color-pink);
-}
-
-.skills-card.sage:hover {
-    border-color: var(--color-sage);
-}
-
-.skills-card.peach:hover {
-    border-color: var(--color-peach);
+    border: var(--card-border-hover);
 }
 
 .skills-card h3 {
