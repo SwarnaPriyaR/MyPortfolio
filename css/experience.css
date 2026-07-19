@@ -54,7 +54,7 @@
 
 /* Timeline card content */
 .timeline-card {
-    background-color: var(--bg-secondary);
+    background-color: var(--card-bg-sage);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-md);
     padding: 2.5rem;

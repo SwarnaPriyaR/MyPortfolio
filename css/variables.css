@@ -42,6 +42,11 @@
     --navbar-bg: rgba(234, 248, 240, 0.9);
     --navbar-border: rgba(203, 213, 225, 0.5);
     --footer-bg: #d8f3e5;
+
+    /* Card background color mappings in Light Mode */
+    --card-bg-pink: var(--color-pink-light);
+    --card-bg-sage: var(--color-sage-light);
+    --card-bg-peach: var(--color-peach-light);
 }
 
 /* DARK MODE COLORS (Midnight Blue Dominant, Soft Cherry Red accents) */
@@ -74,4 +79,9 @@
     --navbar-bg: rgba(8, 12, 24, 0.85);
     --navbar-border: rgba(30, 41, 75, 0.5);
     --footer-bg: #050811;
+
+    /* Card background color mappings in Dark Mode (fallback to default secondary card bg) */
+    --card-bg-pink: var(--bg-secondary);
+    --card-bg-sage: var(--bg-secondary);
+    --card-bg-peach: var(--bg-secondary);
 }

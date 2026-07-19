@@ -6,7 +6,7 @@
 }
 
 .cert-card {
-    background-color: var(--bg-secondary);
+    background-color: var(--card-bg-peach);
     border: 1px solid var(--border-color);
     border-radius: var(--border-radius-md);
     padding: 2rem;
@@ -29,8 +29,16 @@
     background-color: var(--color-peach-dark);
 }
 
+.cert-card:nth-child(2) {
+    background-color: var(--card-bg-pink);
+}
+
 .cert-card:nth-child(2)::before {
     background-color: var(--color-pink-dark);
+}
+
+.cert-card:nth-child(3) {
+    background-color: var(--card-bg-sage);
 }
 
 .cert-card:nth-child(3)::before {
