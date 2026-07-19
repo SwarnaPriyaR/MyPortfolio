@@ -130,20 +130,6 @@
     width: 100%;
 }
 
-.contact-animation-wrapper {
-    width: 100%;
-    max-width: 380px;
-    height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#contact-lottie {
-    width: 100%;
-    height: 100%;
-}
-
 /* Footer layout */
 footer {
     padding: 3rem 0;

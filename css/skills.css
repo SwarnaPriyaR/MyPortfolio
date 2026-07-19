@@ -12,21 +12,6 @@
     gap: 2.5rem;
 }
 
-.skills-animation-box {
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#skills-lottie {
-    width: 100%;
-    height: 100%;
-}
-
 /* Proficiency Progress Bars */
 .proficiency-container {
     display: flex;

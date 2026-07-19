@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="css/certs.css">
     <link rel="stylesheet" href="css/contact.css">
     
-    <!-- Lottie Web Player Library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <!-- Lottie Web Player Library (dotLottie) -->
+    <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js" type="module"></script>
 </head>
 <body>
 
@@ -82,10 +82,13 @@
                     </a>
                 </div>
             </div>
-            <div class="hero-visual reveal delay-200">
-                <div class="hero-animation-wrapper">
-                    <div id="hero-lottie"></div>
-                </div>
+            <div class="hero-visual reveal delay-200 active">
+                <dotlottie-wc
+                  src="https://assets5.lottiefiles.com/packages/lf20_ygiu5cty.json"
+                  style="width: 300px; height: 300px"
+                  autoplay
+                  loop
+                ></dotlottie-wc>
             </div>
         </div>
     </section>
@@ -97,9 +100,12 @@
             <h2 class="section-title">Skills &amp; Technologies</h2>
             <div class="skills-grid reveal">
                 <div class="skills-left">
-                    <div class="skills-animation-box">
-                        <div id="skills-lottie"></div>
-                    </div>
+                    <dotlottie-wc
+                      src="https://assets5.lottiefiles.com/packages/lf20_qpwb7t.json"
+                      style="width: 300px; height: 300px; margin: 0 auto; display: block;"
+                      autoplay
+                      loop
+                    ></dotlottie-wc>
                     <div class="proficiency-container">
                         <h4 class="proficiency-title">Core Proficiencies</h4>
                         
@@ -409,9 +415,12 @@
                 </div>
             </div>
             <div class="contact-visual">
-                <div class="contact-animation-wrapper">
-                    <div id="contact-lottie"></div>
-                </div>
+                <dotlottie-wc
+                  src="https://assets3.lottiefiles.com/packages/lf20_u25cckyh.json"
+                  style="width: 300px; height: 300px"
+                  autoplay
+                  loop
+                ></dotlottie-wc>
             </div>
         </div>
     </section>
@@ -425,6 +434,5 @@
     <!-- JS Scripts -->
     <script src="js/theme.js"></script>
     <script src="js/animations.js"></script>
-    <script src="js/lottie-loader.js"></script>
 </body>
 </html>
