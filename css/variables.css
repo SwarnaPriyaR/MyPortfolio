@@ -13,40 +13,40 @@
     --transition-normal: 0.3s ease;
     --transition-slow: 0.5s ease;
 
-    /* LIGHT MODE COLORS (Default - Saturated Sage Green Dominant, Pink & Peach accents) */
-    --bg-primary: #eaf8f0; /* More opaque, prominent sage green background */
-    --bg-secondary: #ffffff; /* Pure white card background */
-    --bg-tertiary: #d8f3e5; /* Deeper, more intense sage tertiary background */
+    /* LIGHT MODE COLORS (Pastel Sky Blue background and Pastel Yellow cards) */
+    --bg-primary: #B4E1EB; /* Pastel sky blue page background */
+    --bg-secondary: #F9E8A2; /* Pastel yellow card background */
+    --bg-tertiary: #a4d7e1; /* Slightly darker pastel sky blue for active elements */
     --text-primary: #0f172a; /* Slate primary text */
     --text-secondary: #334155; /* Slate secondary text */
     --text-muted: #64748b;
     
     /* Pastel Accents in Light Mode */
-    --color-sage: #a7f3d0; /* Saturated Sage Green base */
-    --color-sage-dark: #065f46; /* Deeper sage green accent */
-    --color-sage-light: #d1fae5; /* Intense light sage background */
+    --color-sage: #F9E8A2; /* Map accents to pastel yellow */
+    --color-sage-dark: #b59523; /* Darker mustard yellow for icons/accent text */
+    --color-sage-light: #F9E8A2;
     
-    --color-pink: #fbcfe8; /* Pastel pink highlight */
-    --color-pink-dark: #db2777; /* Pastel pink dark text */
-    --color-pink-light: #fdf2f8; /* Light pink background */
+    --color-pink: #F9E8A2;
+    --color-pink-dark: #b59523;
+    --color-pink-light: #F9E8A2;
     
-    --color-peach: #ffedd5; /* Pastel peach highlight */
-    --color-peach-dark: #ea580c; /* Pastel peach dark text */
-    --color-peach-light: #fff7ed; /* Light peach background */
+    --color-peach: #F9E8A2;
+    --color-peach-dark: #b59523;
+    --color-peach-light: #F9E8A2;
     
-    --accent-primary: #065f46; /* Primary accent is deep Sage Green */
-    --border-color: #cbd5e1; /* Opaque borders for better visibility */
-    --card-shadow: 0 10px 30px -10px rgba(6, 95, 70, 0.12), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
-    --card-shadow-hover: 0 20px 40px -15px rgba(6, 95, 70, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    --accent-primary: #b59523; /* Mustard yellow primary accent */
+    --border-color: #92cbd6; /* Cohesive sky blue border */
+    --card-shadow: 0 10px 30px -10px rgba(15, 23, 42, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.02);
+    --card-shadow-hover: 0 20px 40px -15px rgba(15, 23, 42, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
     
-    --navbar-bg: rgba(234, 248, 240, 0.9);
-    --navbar-border: rgba(203, 213, 225, 0.5);
-    --footer-bg: #d8f3e5;
+    --navbar-bg: rgba(180, 225, 235, 0.95); /* Cohesive sky blue navbar */
+    --navbar-border: rgba(146, 203, 214, 0.5);
+    --footer-bg: #a4d7e1; /* Matching sky blue footer */
 
     /* Card background color mappings in Light Mode */
-    --card-bg-pink: var(--color-pink-light);
-    --card-bg-sage: var(--color-sage-light);
-    --card-bg-peach: var(--color-peach-light);
+    --card-bg-pink: #F9E8A2;
+    --card-bg-sage: #F9E8A2;
+    --card-bg-peach: #F9E8A2;
 }
 
 /* DARK MODE COLORS (Midnight Blue Dominant, Soft Cherry Red accents) */
