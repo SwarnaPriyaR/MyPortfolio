@@ -62,6 +62,13 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 0.5rem;
+    overflow: hidden;
+}
+
+.cert-icon img {
+    max-width: 75%;
+    max-height: 75%;
+    object-fit: contain;
 }
 
 .cert-card h3 {
