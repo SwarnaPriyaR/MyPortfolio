@@ -155,7 +155,9 @@ nav {
     .mobile-menu-toggle {
         display: flex;
     }
-    
+    .nav-menu {
+        gap: 1.25rem;
+    }
     .nav-links {
         position: fixed;
         top: 0;
@@ -164,6 +166,7 @@ nav {
         height: 100vh;
         background-color: var(--bg-secondary);
         flex-direction: column;
+        max-width: 100%;
         justify-content: center;
         align-items: center;
         gap: 2.5rem;
