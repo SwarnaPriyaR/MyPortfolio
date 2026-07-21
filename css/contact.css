@@ -140,7 +140,8 @@ footer {
         order: -1; /* Animation on top in mobile */
     }
     
-    .contact-animation-wrapper {
-        height: 250px;
+    dotlottie-wc {
+        width: 250px !important;
+        height: 250px !important;
     }
 }

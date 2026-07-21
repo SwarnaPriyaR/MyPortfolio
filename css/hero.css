@@ -169,7 +169,18 @@ dotlottie-wc:hover {
         order: 2;
     }
     
-    .hero-animation-wrapper {
-        height: 300px;
+    dotlottie-wc {
+        width: 320px !important;
+        height: 320px !important;
+    }
+}
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    dotlottie-wc {
+        width: 250px !important;
+        height: 250px !important;
     }
 }
