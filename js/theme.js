@@ -29,11 +29,9 @@ document.addEventListener('DOMContentLoaded', () => {
         if (theme === 'dark') {
             themeIcon.textContent = '☀️'; // Sun icon for switching to light mode
             themeBtn.setAttribute('aria-label', 'Switch to light mode');
-            themeBtn.setAttribute('data-tooltip', 'Light mode');
         } else {
             themeIcon.textContent = '🌙'; // Moon icon for switching to dark mode
             themeBtn.setAttribute('aria-label', 'Switch to dark mode');
-            themeBtn.setAttribute('data-tooltip', 'Dark mode');
         }
     }
 });
